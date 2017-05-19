@@ -1,0 +1,199 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+input:focus{
+	background: lightgreen;
+}
+
+.header{
+	background: #273B47;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+.logotipo{
+	width: 12%;
+	display: inline-block;
+	margin: 0;
+}
+
+.menu{
+	width: 80%;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 18px;
+}
+
+.menu ul{
+	margin: 0;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 5px;
+}
+
+.menu li a{
+	color: white;
+	text-decoration: none;
+}
+
+.menu li:after{
+	content: '|';
+	font-size: 20px;
+	line-height: 20px;
+	color: white;
+	padding: 5px;
+}
+
+.button{
+	display: flex;
+	justify-content: flex-start;
+	color: white;
+	text-decoration: none;
+	border-radius: 12px;
+	border: none;
+	padding: 7px 12px;
+	cursor: pointer;
+	font-size: 18px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+	background: #b4e391; /* Old browsers */
+	background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 ); /* IE6-9 */
+}
+
+.search{
+	padding: 10px;
+}
+
+.buscar{
+	padding: 5px;
+	margin: 2px;
+	font-size: 16px;
+	border-radius: 12px;
+	border-color: green;
+	border-style: solid;
+}
+
+.imgsearch{
+	height: 30px;
+	width: 30px;
+	margin: 2px;
+	border-radius: 12px;
+	border-style: solid;
+	border-color: green;
+}
+
+.portada{
+	color: white;
+	padding: 15px;
+	height: 500px;
+	width: 1100px;
+	margin: auto;
+}
+
+.background{
+	background-image: url('../imagenes/portada_paisaje3.jpg');
+	background-size: cover;
+}
+
+.background-contruc{
+	background-image: url('../imagenes/Construccion.jpg');
+	background-size: cover;	
+}
+
+.portadaint{
+	color: #168B26;
+	position: relative;
+	margin-bottom: 20px;
+	background: rgba(255, 255, 255, .8);
+	left: 20px;
+	padding: 20px;
+	width: 30%;
+}
+
+.autor{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+	border-top: 1px solid gray;
+	padding-top: 15px;
+}
+
+.blog-items{
+	width: 59%;
+	padding: 20px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.blog-items h3{
+	font-weight: 600;
+	margin: 10px 0 15px;
+}
+
+.item-blog{
+	width: 300px;
+}
+
+.item-blog .description{
+	margin-bottom: 15px;
+}
+
+.subtitulo{
+	color: #168B26;
+	position: relative;
+	padding: 5px;
+	margin: 0;
+	margin-left: 400px;
+	text-decoration: underline;
+}
+
+.imagin{
+	width: 306px;
+	height: 160px;
+}
+
+.paginador{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.paginador ul{
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-left: 10px;
+}
+
+.paginador li{
+	background: #b4e391;
+	height: 40px;
+	line-height: 40px;
+	border: 1px solid #168B26;
+	margin: 0 5px;
+}
+
+.paginador li.selected{
+	border-color: transparent;
+	background: white;
+}
+
+.paginador a{
+	padding: 0 10px;
+	text-decoration: none;
+	display: block;
+	height: inherit;
+}
